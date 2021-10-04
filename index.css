@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: yellow;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.row1{
+    display: inline-block;
+    margin-left: 39px;
+    margin-right: 77px;
+    border: 1px solid teal;
+    background: teal;
+    height: 100px;
+    width: 100px;
+    animation: row1 3s infinite normal;
+    transform: skewX(-20deg);
+}
+.row2{
+    margin-top: 10%;
+    display: inline-block;
+    margin-left: 39px;
+    margin-right: 77px;
+    border: 1px solid;
+    background: rgb(145, 88, 145);
+    height: 100px;
+    width: 100px;
+    animation: row2 3s infinite normal;
+    transform: skewY(-20deg);
+}
+.row3{
+    margin-top: 10%;
+    display: inline-block;
+    margin-left: 39px;
+    margin-right: 77px;
+    border: 1px solid teal;
+    background: teal;
+    height: 100px;
+    width: 100px;
+    animation: row3 3s infinite normal;
+}
+.row4{
+    margin-top: 10%;
+    display: inline-block;
+    margin-left: 39px;
+    margin-right: 77px;
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+}
+.box1{
+    animation: box1 3s infinite normal;
+    background: teal;
+}
+.box2{
+    animation: box2 3s infinite normal;
+    background: brown;
+}
+.box3{
+    animation: box3 3s infinite normal;
+    background: green;
+}
+
+@keyframes row1 {
+    50%{
+        transform: skewX(20deg);
+    }
+}
+@keyframes row2 {
+    50%{
+        transform: skewY(20deg);
+    }
+    
+}
+@keyframes row3 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes box1 {
+    50%{
+        transform: scaleY(1.5);
+    }
+}
+@keyframes box2 {
+    50%{
+        transform: scaleX(1.5);
+    }
+}
+@keyframes box3 {
+    50%{
+        transform: rotate(-90deg);
+    }
+}
